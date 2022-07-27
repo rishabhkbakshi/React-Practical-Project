@@ -1,0 +1,16 @@
+.test-css {
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row {
+    border: 2px solid black;
+}
+
+.th {
+    font-weight: bold;
+}
+
+form .row {
+    border: unset;
+}
