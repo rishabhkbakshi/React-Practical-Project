@@ -16,6 +16,7 @@ Follow the below steps
 - Advance-Module-React (4th) - *This will the advance concept of React.js*
 - react-meal-app (5th) - *Another application to learn React.js in the deep*
 - class-component-tutorial (6th) - *This will explain how user can create React application using class components*
+- connect-to-database (7th) - *This application will explain how can the user call the API for dynamic data in the react application*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
