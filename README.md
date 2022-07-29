@@ -17,6 +17,8 @@ Follow the below steps
 - react-meal-app (5th) - *Another application to learn React.js in the deep*
 - class-component-tutorial (6th) - *This will explain how user can create React application using class components*
 - connect-to-database (7th) - *This application will explain how can the user call the API for dynamic data in the react application*
+- custom-hooks-1 (8th) - *This application will explain how user can create the custom hooks*
+- custom-hooks-2 (9th) - *Complex and bit logical example of custom hoook*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
