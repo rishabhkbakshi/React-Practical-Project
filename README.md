@@ -19,6 +19,7 @@ Follow the below steps
 - connect-to-database (7th) - *This application will explain how can the user call the API for dynamic data in the react application*
 - custom-hooks-1 (8th) - *This application will explain how user can create the custom hooks*
 - custom-hooks-2 (9th) - *Complex and bit logical example of custom hoook*
+- practice-react-app (10th) - *practice for form validation*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
