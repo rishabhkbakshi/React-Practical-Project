@@ -13,9 +13,13 @@ function App () {
   const showCartHandler = () => {
     setCartIsShown(true)
   }
-  const hideCartHandler = (Message = '') => {
-    if (Message) {
+  const hideCartHandler = (Message = '', error = false) => {
+    if (Message && !error) {
       toast.success(Message, {
+        autoClose: 1500
+      })
+    } else {
+      toast.error(Message, {
         autoClose: 1500
       })
     }
