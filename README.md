@@ -14,11 +14,11 @@ Follow the below steps
 - React-CSS (2nd) - *This will explain that how user can apply styles in the JSX code (There are 3 ways to do that)*
 - practice-react-app (3rd) - *A application to understand how to create forms*
 - Advance-Module-React (4th) - *This will the advance concept of React.js*
-- react-meal-app (5th) - *Another application to learn React.js in the deep*
+- react-meal-app (5th) - *Another application to learn React.js in the deep (with api call)*
 - class-component-tutorial (6th) - *This will explain how user can create React application using class components*
 - connect-to-database (7th) - *This application will explain how can the user call the API for dynamic data in the react application*
 - custom-hooks-1 (8th) - *This application will explain how user can create the custom hooks*
-- custom-hooks-2 (9th) - *Complex and bit logical example of custom hoook*
+- custom-hooks-2 (9th) - *Complex and bit logical example of custom hook*
 - working-with-form (10th) - *practice for form validation => (you can learn the optimal solution of the form in react)*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
