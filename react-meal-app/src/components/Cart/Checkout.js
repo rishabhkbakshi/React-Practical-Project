@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import classes from './Checkout.module.css'
 
 const isEmpty = value => value.trim() === ''
-const isFiveChars = value => value.trim().length === 5
+const isFiveChars = value => value.trim().length === 6
 
 const Checkout = props => {
   const nameRef = useRef()
@@ -81,7 +81,7 @@ const Checkout = props => {
         <label htmlFor='postal'>Postal Code</label>
         <input type='text' id='postal' ref={postalCodeRef} />
         {!formInputsValidity.postalCode && (
-          <p>Please enter a Postal Code (5 charectors long)</p>
+          <p>Please enter a Postal Code (6 charectors long)</p>
         )}
       </div>
       <div className={cityControlClasses}>
