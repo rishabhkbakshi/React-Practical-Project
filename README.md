@@ -20,6 +20,9 @@ Follow the below steps
 - custom-hooks-1 (8th) - *This application will explain how user can create the custom hooks*
 - custom-hooks-2 (9th) - *Complex and bit logical example of custom hook*
 - working-with-form (10th) - *practice for form validation => (you can learn the optimal solution of the form in react)*
+- React-Redux (11th) - *practice for Redux in React => (you can learn that how you can use redux concept in react app (with or without use of react-redus toolkit))*
+- React (10th) - *Basic Concept of Redux => (you can learn the how you can use the redux)*
+- working-with-form (10th) - *practice for form validation => (you can learn the optimal solution of the form in react)*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
