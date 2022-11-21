@@ -22,6 +22,7 @@ Follow the below steps
 - working-with-form (10th) - *practice for form validation => (you can learn the optimal solution of the form in react)*
 - React-Redux (11th) - *practice for Redux in React => (you can learn that how you can use redux concept in react app (with or without use of react-redus toolkit))*
 - React (12th) - *Basic Concept of Redux => (you can learn the how you can use the redux)*
+- Cart-App-With-Redux (13th) - *Understand the redux with async call (API calling) and the Actions Thunks*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
