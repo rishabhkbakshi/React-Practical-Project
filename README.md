@@ -23,6 +23,8 @@ Follow the below steps
 - React-Redux (11th) - *practice for Redux in React => (you can learn that how you can use redux concept in react app (with or without use of react-redus toolkit))*
 - React (12th) - *Basic Concept of Redux => (you can learn the how you can use the redux)*
 - Cart-App-With-Redux (13th) - *Understand the redux with async call (API calling) and the Actions Thunks*
+- react-router-app (14th) - *Understand the basic routing feature*
+- routing-practice-project (15th) - *Understand the complex feature of routing. In sort you will under the advance feature of routing => with HTTP request => Add comment feature in the application => add the lazy loading concept in the application => host the application on the firebase* 
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
