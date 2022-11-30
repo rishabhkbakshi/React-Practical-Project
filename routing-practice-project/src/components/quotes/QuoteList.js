@@ -20,7 +20,7 @@ const QuoteList = (props) => {
 
   const queryParams = new URLSearchParams(location.search);
   const isSortAsc = queryParams.get('sort') === 'asc';
-
+  
   const sortedQuotes = sortQuotes(props.quotes, isSortAsc);
 
   const changeSortingHandler = () => {
