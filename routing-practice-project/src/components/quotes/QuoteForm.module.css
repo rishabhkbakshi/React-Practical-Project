@@ -47,3 +47,11 @@
 .actions button {
   font-size: 1.25rem;
 }
+
+.actions button:disabled {
+  opacity: 0.5;
+}
+
+.error {
+  color: red;
+}
