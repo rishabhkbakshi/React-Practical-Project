@@ -23,42 +23,26 @@ const QuoteForm = (props) => {
   });
 
   const onAuthorChangeHandler = () => {
-    if (authorInputRef.current.value !== '') {
-      setErrorDisableStatus({
-        error: {
-          authorField: false,
-          textField: textInputRef.current.value === '' ? true : false,
-        },
-      });
-    } else {
-      setErrorDisableStatus({
-        error: {
-          authorField: true,
-          textField: textInputRef.current.value === '' ? true : false,
-        },
-      });
-    }
+    setErrorDisableStatus({
+      error: {
+        authorField: authorInputRef.current.value !== '' ? false : true,
+        textField: textInputRef.current.value === '' ? true : false,
+      },
+    });
+
     setUserInput((prevState) => {
       return { ...prevState, enteredAuthor: authorInputRef.current.value };
     });
   };
 
   const onTextChangeHandler = () => {
-    if (textInputRef.current.value !== '') {
-      setErrorDisableStatus({
-        error: {
-          authorField: authorInputRef.current.value === '' ? true : false,
-          textField: false,
-        },
-      });
-    } else {
-      setErrorDisableStatus({
-        error: {
-          textField: true,
-          authorField: authorInputRef.current.value === '' ? true : false,
-        },
-      });
-    }
+    setErrorDisableStatus({
+      error: {
+        authorField: authorInputRef.current.value === '' ? true : false,
+        textField: textInputRef.current.value !== '' ? false : true,
+      },
+    });
+
     setUserInput((prevState) => {
       return { ...prevState, enteredText: textInputRef.current.value };
     });
