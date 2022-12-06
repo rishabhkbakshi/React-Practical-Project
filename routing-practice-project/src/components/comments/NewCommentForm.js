@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import useHttp from '../../hooks/use-http';
 import { addComment } from '../../lib/api';
 import LoadingSpinner from '../UI/LoadingSpinner';
@@ -7,6 +7,11 @@ import classes from './NewCommentForm.module.css';
 
 const NewCommentForm = (props) => {
   const commentTextRef = useRef();
+
+  const [errorDisableStatus, setErrorDisableStatus] = useState({
+    error: false,
+    disable: true,
+  });
 
   const { sendRequest, status, error } = useHttp(addComment);
   const { onAddedComment } = props;
@@ -20,7 +25,6 @@ const NewCommentForm = (props) => {
   const submitFormHandler = (event) => {
     event.preventDefault();
 
-    // optional: Could validate here
     const enteredText = commentTextRef.current.value;
     sendRequest({
       commentData: {
@@ -28,6 +32,21 @@ const NewCommentForm = (props) => {
       },
       quoteId: props.quoteId,
     });
+    commentTextRef.current.value = '';
+  };
+
+  const onChangeHandler = () => {
+    if (commentTextRef.current.value !== '') {
+      setErrorDisableStatus({
+        error: false,
+        disable: false,
+      });
+    } else {
+      setErrorDisableStatus({
+        error: true,
+        disable: true,
+      });
+    }
   };
 
   return (
@@ -37,12 +56,22 @@ const NewCommentForm = (props) => {
           <LoadingSpinner></LoadingSpinner>
         </div>
       )}
-      <div className={classes.control} onSubmit={submitFormHandler}>
+      <div className={classes.control}>
         <label htmlFor="comment">Your Comment</label>
-        <textarea id="comment" rows="5" ref={commentTextRef}></textarea>
+        <textarea
+          id="comment"
+          rows="5"
+          ref={commentTextRef}
+          onChange={onChangeHandler}
+        ></textarea>
+        {errorDisableStatus.error && (
+          <p className={classes.error}>Comment field can't be blank</p>
+        )}
       </div>
       <div className={classes.actions}>
-        <button className="btn">Add Comment</button>
+        <button className="btn" disabled={errorDisableStatus.disable}>
+          Add Comment
+        </button>
       </div>
     </form>
   );
