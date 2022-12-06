@@ -114,7 +114,7 @@ const QuoteForm = (props) => {
               value={userInput.enteredText}
               ref={textInputRef}
               onChange={onTextChangeHandler}
-            ></textarea>{' '}
+            ></textarea>
             {errorDisableStatus.error.textField && (
               <p className={classes.error}>Text field can't be blank</p>
             )}
