@@ -55,7 +55,7 @@ const QuoteForm = (props) => {
       setErrorDisableStatus({
         error: {
           textField: true,
-          authorField: textInputRef.current.value === '' ? true : false,
+          authorField: authorInputRef.current.value === '' ? true : false,
         },
       });
     }
