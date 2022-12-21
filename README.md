@@ -26,7 +26,8 @@ Follow the below steps
 - react-router-app (14th) - *Understand the basic routing feature*
 - routing-practice-project (15th) - *Understand the complex feature of routing. In sort you will under the advance feature of routing => with HTTP request => Add comment feature in the application => add the lazy loading concept in the application => host the application on the firebase* 
 - Authentication-Module (16th) - *Understand the Authentication process in react using JWT token (firebase authentication)*
-- nextjs-course (17th) - *Understand the basic of next.js e.g. routing using file and folder structure. And also understand the concept of Link tag instead of a tag*
+- nextjs-course (17th) - *Understand the basic of next.js e.g. routing using file and folder structure. And also understand the concept of **Link** tag instead of **a** tag*
+- onwards-to-a-bigger-project-in-next.js (18th) - *Real project of meeting in next.js*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
