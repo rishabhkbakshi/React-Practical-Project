@@ -25,7 +25,8 @@ Follow the below steps
 - Cart-App-With-Redux (13th) - *Understand the redux with async call (API calling) and the Actions Thunks*
 - react-router-app (14th) - *Understand the basic routing feature*
 - routing-practice-project (15th) - *Understand the complex feature of routing. In sort you will under the advance feature of routing => with HTTP request => Add comment feature in the application => add the lazy loading concept in the application => host the application on the firebase* 
-- README.md (16th) - *Understand the Authentication process in react using JWT token (firebase authentication)*
+- Authentication-Module (16th) - *Understand the Authentication process in react using JWT token (firebase authentication)*
+- nextjs-course (17th) - *Understand the basic of next.js e.g. routing using file and folder structure. And also understand the concept of <Link> instead <a>*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
