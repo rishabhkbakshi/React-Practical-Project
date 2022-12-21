@@ -6,7 +6,8 @@ Follow the below steps
 - Download the particular project 
 - Open the downloaded project in vscode (or in any editor)
 - Open the terminal 
-- Run this command **<ins>`npm start`</ins>** (This command will create *node_modules*)
+- Run this command **<ins>`npm install`</ins>** (This command will create *node_modules*)
+- Run this command **<ins>`npm start`</ins>** (to run the project)
 - Page will open in the default browser of your system i.e. chrome (Link will be [http://localhost:3000](http://localhost:3000))
     
 ## What is the priority of project in this repository ?
