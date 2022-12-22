@@ -1,5 +1,3 @@
-import Layout from '../components/layout/Layout';
-import MainNavigation from '../components/layout/MainNavigation';
 import MeetupList from '../components/meetups/MeetupList';
 
 const DUMMY_MEETUPS = [
@@ -21,8 +19,32 @@ const DUMMY_MEETUPS = [
   },
 ];
 
-function HomePage() {
-  return <MeetupList meetups={DUMMY_MEETUPS}></MeetupList>;
+function HomePage(props) {
+  return <MeetupList meetups={props.meetups}></MeetupList>;
 }
+
+// Static site generation (SSG)
+export async function getStaticProps() {
+  // fetch data from an API
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+    revalidate: 10, // update regularly after deployment (in very 10 sec)
+  };
+}
+
+// server side rendering (SSR)
+// export async function getServerSideProps(context) {
+//   const req = context.req;
+//   const res = context.res;
+//   // fetch data from an API
+
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS,
+//     },
+//   };
+// }
 
 export default HomePage;
