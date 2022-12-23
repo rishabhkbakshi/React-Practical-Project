@@ -1,23 +1,5 @@
 import MeetupList from '../components/meetups/MeetupList';
-
-const DUMMY_MEETUPS = [
-  {
-    id: 'm1',
-    title: 'A First Meetup',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Burgas-in-1981-02.jpg/1024px-Burgas-in-1981-02.jpg?20090101205544',
-    address: 'Chomu pulia, Jaipur',
-    description: 'This is a first meetup!',
-  },
-  {
-    id: 'm2',
-    title: 'A Second Meetup',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Burgas-in-1981-01.jpg/1200px-Burgas-in-1981-01.jpg?20090101205342',
-    address: 'Mansarovar Metro, Jaipur',
-    description: 'This is a second meetup!',
-  },
-];
+import dbConn from './api/db-con';
 
 function HomePage(props) {
   return <MeetupList meetups={props.meetups}></MeetupList>;
@@ -26,11 +8,27 @@ function HomePage(props) {
 // Static site generation (SSG)
 export async function getStaticProps() {
   // fetch data from an API
+
+  const client = await dbConn();
+
+  const db = client.db();
+
+  const meetupsCollection = db.collection('meetups');
+
+  const meetups = await meetupsCollection.find().toArray();
+
+  client.close();
+
   return {
     props: {
-      meetups: DUMMY_MEETUPS,
+      meetups: meetups.map((meetup) => ({
+        title: meetup.title,
+        address: meetup.address,
+        image: meetup.image,
+        id: meetup._id.toString(),
+      })),
     },
-    revalidate: 10, // update regularly after deployment (in very 10 sec)
+    revalidate: 1, // update regularly after deployment (in very 10 sec)
   };
 }
 
