@@ -1,8 +1,21 @@
 import MeetupList from '../components/meetups/MeetupList';
 import dbConn from './api/db-con';
+import Head from 'next/head';
+import { Fragment } from 'react';
 
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups}></MeetupList>;
+  return (
+    <Fragment>
+      <Head>
+        <title>React Meetups</title>
+        <meta
+          name="description"
+          content="Browse a huge list of highly active React meetups!"
+        ></meta>
+      </Head>
+      <MeetupList meetups={props.meetups}></MeetupList>
+    </Fragment>
+  );
 }
 
 // Static site generation (SSG)
