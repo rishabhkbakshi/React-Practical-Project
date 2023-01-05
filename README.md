@@ -30,6 +30,10 @@ Follow the below steps
 - nextjs-course (17th) - *Understand the basic of next.js e.g. routing using file and folder structure. And also understand the concept of **Link** tag instead of **a** tag*
 - onwards-to-a-bigger-project-in-next.js (18th) - *Real project of meetups in next.js => make the connection to mongodb in this project for data manipulation*
 - React-Animations (19th) - *Understand the basics of React-Transition-Group* => https://github.com/reactjs/react-transition-group
+- replace-redux-reference-project (20th) - *Reference project to replace redux*
+- replace-redux-by-context-api (21st) - *Explanation of how to replace redux using context-api*
+- replace-redux-by-custom-hooks (22nd) - *Explanation of how to replace redux using custom hooks*
+- replace-redux-by-multiple-slices-custom-hooks (23rd) - *Explanation of how to replace redux using custom hooks (multiple slice - a seprate app)*
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
