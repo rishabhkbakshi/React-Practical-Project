@@ -35,7 +35,7 @@ Follow the below steps
 - replace-redux-by-context-api (21st) - *Explanation of how to replace redux using context-api*
 - replace-redux-by-custom-hooks (22nd) - *Explanation of how to replace redux using custom hooks*
 - replace-redux-by-multiple-slices-custom-hooks (23rd) - *Explanation of how to replace redux using custom hooks (multiple slice - a seprate app)*
-- React-Test (23rd) - *Explane the way to test the react app* 
+- React-Test (23rd) - *Explain the way to test the react app* 
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
