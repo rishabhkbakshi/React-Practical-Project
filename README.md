@@ -9,6 +9,7 @@ Follow the below steps
 - Run this command **<ins>`npm install`</ins>** (This command will create *node_modules*)
 - Run this command **<ins>`npm start`</ins>** (to run the project)
 - Page will open in the default browser of your system i.e. chrome (Link will be [http://localhost:3000](http://localhost:3000))
+- Run this command **<ins>`npm test`</ins>** (to test the react component)
     
 ## What is the priority of project in this repository ?
 - React-JS-Tutorial (1st) - *This project will explain the basics of React.js*
@@ -34,6 +35,7 @@ Follow the below steps
 - replace-redux-by-context-api (21st) - *Explanation of how to replace redux using context-api*
 - replace-redux-by-custom-hooks (22nd) - *Explanation of how to replace redux using custom hooks*
 - replace-redux-by-multiple-slices-custom-hooks (23rd) - *Explanation of how to replace redux using custom hooks (multiple slice - a seprate app)*
+- React-Test (23rd) - *Explane the way to test the react app* 
 
 ##### note:- <ins>refer the individual .md file of every project for further information about the react project</ins>
 
