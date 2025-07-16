@@ -4,7 +4,7 @@ import { uiActions } from './ui-slice'
 // action thunk
 export const fecthCartData = () => {
   return async dispatch => {
-    const fecthData = async () => {
+    const fetchData = async () => {
       const response = await fetch(
         'https://react-http-8d5c6-default-rtdb.firebaseio.com/cart.json'
       )
@@ -18,7 +18,7 @@ export const fecthCartData = () => {
     }
 
     try {
-      const cartData = await fecthData()
+      const cartData = await fetchData()
       dispatch(
         cartActions.replaceCart({
           items: cartData.items || [],
